@@ -14,8 +14,6 @@ wait_time = 1
 animal_name = sys.argv[1]
 save_dir = "../images/" + animal_name
 
-#print('animal_name=',animal_name)
-#print('save_dir=',save_dir)
 flickr = FlickrAPI(key, secret, format='parsed-json')
 result = flickr.photos.search(
     text = animal_name,
